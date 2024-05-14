@@ -1,4 +1,4 @@
-package problems.middle_of_the_linked_list;
+package leetcode.problems.middle_of_the_linked_list;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
