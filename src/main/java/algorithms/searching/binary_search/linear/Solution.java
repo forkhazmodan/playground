@@ -1,4 +1,4 @@
-package algorithms.searching.binary_search.binary_search;
+package algorithms.searching.binary_search.linear;
 
 public class Solution {
   public static int search(int[] nums, int target) {
@@ -6,7 +6,7 @@ public class Solution {
     int high = nums.length - 1;
     int mid;
 
-    while(low <= high) {
+    while(low < high) {
       mid = low + (high - low) / 2;
 
       if (target == nums[mid]) {
