@@ -1,6 +1,6 @@
-package algorithms.searching.binary_search;
+package algorithms.searching.binary_search.binary_search;
 
-public class BinarySearch {
+public class Solution {
   public static int search(int[] nums, int target) {
     int low = 0;
     int high = nums.length - 1;
