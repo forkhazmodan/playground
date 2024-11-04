@@ -1,8 +1,7 @@
 package leetcode.problems.single_numbers_ii;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 import org.junit.jupiter.api.Test;
+import problems.leetcode.single_numbers_ii.Solution;
 
 class SolutionTest {
 

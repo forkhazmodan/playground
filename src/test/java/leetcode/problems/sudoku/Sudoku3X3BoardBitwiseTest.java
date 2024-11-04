@@ -1,6 +1,6 @@
 package leetcode.problems.sudoku;
 
-import leetcode.problems.sudoku.bitwise.Solution;
+import problems.leetcode.sudoku.bitwise.Solution;
 import org.junit.jupiter.api.Test;
 
 class Sudoku3X3BoardBitwiseTest {
@@ -22,5 +22,25 @@ class Sudoku3X3BoardBitwiseTest {
 
     boolean validSudoku = new Solution().isValidSudoku(test1);
 
+  }
+
+  @Test
+  void isValidSudoku2() {
+
+    System.out.println(0/3);
+    System.out.println(1/3);
+    System.out.println(2/3);
+
+    System.out.println(3/3);
+    System.out.println(4/3);
+    System.out.println(5/3);
+
+    System.out.println(6/3);
+    System.out.println(7/3);
+    System.out.println(8/3);
+
+
+
+//    System.out.println(3 * (5 / 3) + (5 / 3));
   }
 }

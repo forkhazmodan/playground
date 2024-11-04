@@ -2,6 +2,7 @@ package concurrent.thread;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.Callable;
 import java.util.concurrent.CompletableFuture;
 
 public class Main {
@@ -38,8 +39,14 @@ public class Main {
       System.out.println(Thread.currentThread().getName() + " finished");
 
     };
+    Callable<String> callable = new Callable<>() {
+      @Override
+      public String call() throws Exception {
+        return "";
+      }
+    };
 
-
+    new Thread(new Thread()).start();
 
     CompletableFuture.allOf(
         CompletableFuture.runAsync(runnable1),

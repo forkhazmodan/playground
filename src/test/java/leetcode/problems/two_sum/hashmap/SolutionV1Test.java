@@ -2,6 +2,7 @@ package leetcode.problems.two_sum.hashmap;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import problems.leetcode.two_sum.hashmap.SolutionV1;
 
 class SolutionV1Test {
 

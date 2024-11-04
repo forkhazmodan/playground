@@ -5,16 +5,15 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ThreadLocalRandom;
-import java.util.stream.Collectors;
 
 public class RoundRobinLoadBalancerV1 extends LoadBalancer {
 
-  private final static Integer DEFAULT_LOAD_BALANCER_SIZE = 10;
+  private final static Integer DEFAULT_SIZE = 10;
   private final Integer size;
   private final Map<String, BackendInstance> instances = new ConcurrentHashMap<>();
 
   public RoundRobinLoadBalancerV1(Integer size) {
-    this.size = size == null ? DEFAULT_LOAD_BALANCER_SIZE : size;
+    this.size = size == null ? DEFAULT_SIZE : size;
   }
 
   @Override

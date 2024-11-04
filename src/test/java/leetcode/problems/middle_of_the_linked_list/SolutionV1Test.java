@@ -2,6 +2,8 @@ package leetcode.problems.middle_of_the_linked_list;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import problems.leetcode.middle_of_the_linked_list.ListNode;
+import problems.leetcode.middle_of_the_linked_list.SolutionV1;
 
 class SolutionV1Test {
 

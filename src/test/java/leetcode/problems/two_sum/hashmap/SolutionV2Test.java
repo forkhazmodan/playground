@@ -5,16 +5,16 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.openjdk.jmh.annotations.Benchmark;
 import org.openjdk.jmh.annotations.BenchmarkMode;
-import org.openjdk.jmh.annotations.Fork;
 import org.openjdk.jmh.annotations.Mode;
 import org.openjdk.jmh.annotations.OutputTimeUnit;
-import org.openjdk.jmh.annotations.Scope;
-import org.openjdk.jmh.annotations.State;
+import problems.leetcode.two_sum.hashmap.SolutionV2;
 
 public class SolutionV2Test {
 
   @Test
   @Benchmark
+  @OutputTimeUnit(TimeUnit.MILLISECONDS)
+  @BenchmarkMode(Mode.SingleShotTime)
   public void twoSum() {
     twoSumBench();
 //    Assertions.assertArrayEquals(new int[]{},     SolutionV2.twoSum(new int[]{-6, 16}, 9));
